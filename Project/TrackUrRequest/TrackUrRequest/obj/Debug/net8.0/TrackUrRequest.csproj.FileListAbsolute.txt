@@ -1,0 +1,14 @@
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.exe
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.deps.json
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.runtimeconfig.json
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.dll
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.pdb
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.AssemblyInfoInputs.cache
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.AssemblyInfo.cs
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.csproj.CoreCompileInputs.cache
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.dll
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\refint\TrackUrRequest.dll
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.pdb
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.genruntimeconfig.cache
+D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\ref\TrackUrRequest.dll
