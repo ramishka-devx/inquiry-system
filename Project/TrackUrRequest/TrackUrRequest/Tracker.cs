@@ -10,7 +10,7 @@ namespace TrackUrRequest
     {
         // Hard-coded Usernames and Password Arrays
         string[] user_ids = { "AD001", "AD002", "AD003", "DE001", "DE002", "DE003", "EG225364", "EG225369", "EG225156" };
-        string[] passw = { "dean_01", "ar_01", "warden_01", "Than_01", "Rami_01", "Path_03", "4635", "9635", "6515" };
+        string[] passw = { "dean_01", "ar_01", "warden_01", "Than_01", "Rami_01", "Path_03", "4635", "5369", "6515" };
 
         public void Login_page()
         {
@@ -31,7 +31,7 @@ namespace TrackUrRequest
             {
                 if (detec_page(inp_user_id) == 1) { admin_page(); }
                 else if (detec_page(inp_user_id) == 2) { dev_page(); }
-                else if (detec_page(inp_user_id) == 3) { users_page(); }
+                else if (detec_page(inp_user_id) == 3) { users_page(inp_user_id); }
             }
             else
             {
@@ -84,10 +84,14 @@ namespace TrackUrRequest
             Console.Clear();
             Console.WriteLine("Developers Page!!!");
         }
-        public void users_page()
+        public void users_page(string Name)
         {
             Console.Clear();
-            Console.WriteLine("Undergraduates Page!!!");
+            // Console.WriteLine("Undergraduates Page!!!");
+            UserPage u = new UserPage(Name);
+            u.App();
+
+
         }
     }
 }
