@@ -12,3 +12,18 @@ D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\Tr
 D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.pdb
 D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.genruntimeconfig.cache
 D:\Studies\3rd Semester\Modules\EC3202 - Data Structures & Algorithms\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\ref\TrackUrRequest.dll
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.exe
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.deps.json
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.runtimeconfig.json
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.dll
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\bin\Debug\net8.0\TrackUrRequest.pdb
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.AssemblyInfoInputs.cache
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.AssemblyInfo.cs
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.csproj.CoreCompileInputs.cache
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.sourcelink.json
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.dll
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\refint\TrackUrRequest.dll
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.pdb
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\TrackUrRequest.genruntimeconfig.cache
+C:\projects\inquiry-system\Project\TrackUrRequest\TrackUrRequest\obj\Debug\net8.0\ref\TrackUrRequest.dll
