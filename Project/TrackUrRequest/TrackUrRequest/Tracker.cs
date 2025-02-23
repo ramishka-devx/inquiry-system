@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrackUrRequest.pages;
 
 namespace TrackUrRequest
 {
@@ -77,17 +78,19 @@ namespace TrackUrRequest
         public void admin_page()
         {
             Console.Clear();
-            Console.WriteLine("Admin Page!!!!!");
+            //Console.WriteLine("Admin Page!!!!!");
+            Admin_Page a = new Admin_Page("Admin");
+            a.App();
         }
         public void dev_page()
         {
-            Console.Clear();
-            Console.WriteLine("Developers Page!!!");
+            Developer_Page dev = new Developer_Page();
+            dev.Start_dev();
         }
         public void users_page(string Name)
         {
             Console.Clear();
-            // Console.WriteLine("Undergraduates Page!!!");
+            //Console.WriteLine("Undergraduates Page!!!");
             UserPage u = new UserPage(Name);
             u.App();
 
