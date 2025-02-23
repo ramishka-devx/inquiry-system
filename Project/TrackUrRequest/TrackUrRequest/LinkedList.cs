@@ -34,8 +34,22 @@ public class LinkedList
         {
             if (current.Data.UserName == userName)
             {
-                Console.WriteLine($"ID: {current.Data.ComplaintID} | Category: {current.Data.Category} | Description: {current.Data.Description} | Date: {current.Data.Date}");
+                Console.WriteLine($"ID: {current.Data.ComplaintID} | Category: {current.Data.Category} |  Date: {current.Data.Date}");
+                Console.WriteLine($"Description: {current.Data.Description}");
+                Console.WriteLine($"Status: {current.Data.Status}\n");
             }
+            current = current.Next;
+        }
+    }
+
+    public void DisplayAll()
+    {
+        Node current = head;
+        while (current != null)
+        {
+            Console.WriteLine($"ID: {current.Data.ComplaintID} | Category: {current.Data.Category} |  Date: {current.Data.Date}");
+            Console.WriteLine($"Description: {current.Data.Description}");
+            Console.WriteLine($"Priority: {current.Data.Priority} | Status: {current.Data.Status}\n");
             current = current.Next;
         }
     }
@@ -56,13 +70,47 @@ public class LinkedList
         return false;
     }
 
+    public bool PriorityChange(int complaintID, int NewPriority) 
+    {
+        Node current = head;
+        int temp=0;
+        while (current != null)
+        {
+            if (current.Data.ComplaintID == complaintID)
+            {
+                temp = current.Data.Priority;
+                current.Data.Priority = NewPriority;
+                return true;
+            }
+            current = current.Next;
+        }
+        
+        return false;
+    }
+
+    public bool StatChange(int complaintID, string stats)
+    {
+        Node current = head;
+        while (current != null)
+        {
+            if (current.Data.ComplaintID == complaintID)
+            {
+                current.Data.Status = stats;
+                return true;
+            }
+            current = current.Next;
+        }
+
+        return false;
+    }
+
     // Save to CSV
     public void SaveToCSV(string filePath)
     {
         using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read))
         using (StreamWriter sw = new StreamWriter(fs))
         {
-            sw.WriteLine("ComplaintID,UserName,Category,Description,Date");
+            sw.WriteLine("ComplaintID,UserName,Category,Description,Date,Priority,Status");
             Node current = head;
             while (current != null)
             {
@@ -71,6 +119,7 @@ public class LinkedList
             }
         }
     }
+
 
     // Load from CSV
     public void LoadFromCSV(string filePath)
@@ -88,15 +137,20 @@ public class LinkedList
                     if (lineNumber == 1) continue; // Skip Header
 
                     string[] data = line.Split(',');
-                    if (data.Length == 5)
+                    if (data.Length == 7)
                     {
                         int id = int.Parse(data[0]);
                         string user = data[1];
                         string category = data[2];
                         string desc = data[3];
                         DateTime date = DateTime.Parse(data[4]);
+                        int priority = int.Parse(data[5]);
+                        string status = data[6];
 
                         Complaint complaint = new Complaint(id, user, category, desc);
+                        complaint.Date = date;
+                        complaint.Priority = priority;
+                        complaint.Status = status;
                         Add(complaint);
                     }
                 }
