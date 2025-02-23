@@ -20,7 +20,7 @@ namespace TrackUrRequest.pages
         public void App()
         {
             WelcomeTXT();
-            Console.WriteLine("Welcome to the User Page!!!");
+            Console.WriteLine("Welcome to the Admin Page!!!");
 
             int choice = 0;
             do
@@ -29,7 +29,8 @@ namespace TrackUrRequest.pages
                 Console.WriteLine("1. View Complaints");
                 Console.WriteLine("2. Change Priority");
                 Console.WriteLine("3. Change Status");
-                Console.WriteLine("4. Save and Logout");
+                Console.WriteLine("4. Sort Complaints");
+                Console.WriteLine("5. Save and Logout");
                 Console.Write("Select an option: ");
                 choice = Convert.ToInt32(Console.ReadLine());
 
@@ -46,6 +47,11 @@ namespace TrackUrRequest.pages
                         ChangeStat();
                         break;
                     case 4:
+                        SortByPriority();
+                        SaveToCSV();
+                        Console.WriteLine("Complaints Sorted by Priority.");
+                        break;
+                    case 5:
                         SaveToCSV();
                         Console.WriteLine("Saving and Logging out...");
                         break;
@@ -54,7 +60,7 @@ namespace TrackUrRequest.pages
                         Console.WriteLine("Invalid choice. Try again.");
                         break;
                 }
-            } while (choice != 4);
+            } while (choice != 5);
         }
 
         public void WelcomeTXT()
@@ -95,6 +101,18 @@ namespace TrackUrRequest.pages
             {
                 Console.WriteLine("Complaint not found or you are not authorized to edit this complaint.");
             }
+        }
+
+        public void SortByPriority()
+        {
+            Console.WriteLine("Select Sorting Criteria");
+            Console.WriteLine("1. Sort by Priority");
+            Console.WriteLine("2. Sort by Complaint ID");
+            Console.Write("Select an option: ");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            Bubble bubble = new Bubble();
+            bubble.Sort(complaints, choice);
+            
         }
 
         public void ChangeStat()
