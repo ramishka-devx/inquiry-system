@@ -1,36 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace TrackUrRequest.pages
 {
     internal class Developer_Page
-    {
-        private LinkedList students;
+    {   
+
+        private LinkedList users;
 
         public Developer_Page()
         {
-            students = new LinkedList();
+            users = new LinkedList();
         }
 
-        private class Student
+
+        private class User
         {
             public string ID { get; set; }
-            public string Name { get; set; }
+            public string Password { get; set; }
 
-            public Student(string id, string name)
+            public User(string id, string password)
             {
                 ID = id;
-                Name = name;
+                Password = password;
             }
 
             public override string ToString()
             {
-                return $"{ID} - {Name}";
+                return $"{ID} - {Password}";
             }
         }
+
 
         private class LinkedList
         {
@@ -45,9 +46,9 @@ namespace TrackUrRequest.pages
                 Count = 0;
             }
 
-            public void AddLast(Student student)
+            public void AddLast(User user)
             {
-                Node newNode = new Node(student);
+                Node newNode = new Node(user);
                 if (Tail == null)
                 {
                     Head = newNode;
@@ -61,11 +62,12 @@ namespace TrackUrRequest.pages
                 Count++;
             }
 
-            public void Remove(Student student)
+            public void Remove(User user)
             {
                 if (Head == null) return;
 
-                if (Head.Data.ID == student.ID)
+
+                if (Head.Data.ID == user.ID)
                 {
                     Head = Head.Next;
                     if (Head == null)
@@ -77,7 +79,7 @@ namespace TrackUrRequest.pages
                 }
 
                 Node current = Head;
-                while (current.Next != null && current.Next.Data.ID != student.ID)
+                while (current.Next != null && current.Next.Data.ID != user.ID)
                 {
                     current = current.Next;
                 }
@@ -112,7 +114,7 @@ namespace TrackUrRequest.pages
                 Node? current = Head;
                 if (current == null)
                 {
-                    Console.WriteLine("No students available.");
+                    Console.WriteLine("No users available.");
                     return;
                 }
 
@@ -123,12 +125,54 @@ namespace TrackUrRequest.pages
                 }
             }
 
+
+
+            public void SaveToCsv(string filePath)
+            {
+                using (var writer = new StreamWriter(filePath))
+                {
+                    Node current = Head;
+                    while (current != null)
+                    {
+
+                        string csvLine = $"{current.Data.ID},{current.Data.Password}";
+                        writer.WriteLine(csvLine);
+                        current = current.Next;
+                    }
+                }
+            }
+
+            public void LoadFromCsv(string filePath)
+            {
+                if (!File.Exists(filePath)) return;
+
+
+                Head = null;
+                Tail = null;
+                Count = 0;
+
+                using (var reader = new StreamReader(filePath))
+                {
+                    string? line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+
+                        var parts = line.Split(',');
+                        if (parts.Length == 2)
+                        {
+                            var user = new User(parts[0], parts[1]);
+                            AddLast(user);
+                        }
+                    }
+                }
+            }
+
             public class Node
             {
-                public Student Data { get; set; }
+                public User Data { get; set; }
                 public Node? Next { get; set; }
 
-                public Node(Student data)
+                public Node(User data)
                 {
                     Data = data;
                     Next = null;
@@ -136,68 +180,105 @@ namespace TrackUrRequest.pages
             }
         }
 
-        public void AddStudent(string id, string name)
+
+        public void AddUser(string id, string password)
         {
-            var student = new Student(id, name);
-            students.AddLast(student);
-            Console.WriteLine($"Student {name} with ID {id} added successfully.");
+            var user = new User(id, password);
+            users.AddLast(user);
+            Console.WriteLine($"User with ID {id} added successfully.");
         }
 
-        public void RemoveStudent(string id)
+
+        public void RemoveUser(string id)
         {
-            var studentNode = students.Search(id);
-            if (studentNode != null)
+            var userNode = users.Search(id);
+            if (userNode != null)
             {
-                students.Remove(studentNode.Data);
-                Console.WriteLine($"Student with ID {id} removed successfully.");
+                users.Remove(userNode.Data);
+                Console.WriteLine($"User with ID {id} removed successfully.");
             }
             else
             {
-                Console.WriteLine("Student not found.");
+                Console.WriteLine("User not found.");
             }
         }
 
-        public void DisplayStudents()
+
+        public void DisplayUsers()
         {
-            students.Display();
+            users.Display();
         }
+
 
         public void Start_dev()
         {
-            var studentManager = new Developer_Page();
+
+            var userManager = new Developer_Page();
+
+
+            string filePath = "users.csv";
+
+
+            userManager.users.LoadFromCsv(filePath);
 
             while (true)
             {
                 Console.WriteLine("\nMenu:");
-                Console.WriteLine("1. Add Student");
-                Console.WriteLine("2. Remove Student");
-                Console.WriteLine("3. Display Students");
+                Console.WriteLine("1. Add User");
+                Console.WriteLine("2. Remove User");
+                Console.WriteLine("3. Display Users");
                 Console.WriteLine("4. Exit");
-
                 Console.Write("Choose an option: ");
-                int choice = Convert.ToInt32(Console.ReadLine());
+
+                int choice;
+                bool validInput = int.TryParse(Console.ReadLine(), out choice);
+                if (!validInput)
+                {
+                    Console.WriteLine("Invalid input. Please enter a number 1-4.");
+                    continue;
+                }
 
                 switch (choice)
                 {
                     case 1:
-                        Console.Write("Enter student ID: ");
-                        string id = Console.ReadLine();
-                        Console.Write("Enter student name: ");
-                        string name = Console.ReadLine();
-                        studentManager.AddStudent(id, name);
+                        Console.Write("Enter user ID: ");
+                        string? id = Console.ReadLine();
+
+                        Console.Write("Enter user password: ");
+                        string? password = Console.ReadLine();
+
+                        if (!string.IsNullOrWhiteSpace(id) && !string.IsNullOrWhiteSpace(password))
+                        {
+                            userManager.AddUser(id, password);
+                            userManager.users.SaveToCsv(filePath);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid ID or password.");
+                        }
                         break;
 
                     case 2:
-                        Console.Write("Enter student ID to remove: ");
-                        string removeId = Console.ReadLine();
-                        studentManager.RemoveStudent(removeId);
+                        Console.Write("Enter user ID to remove: ");
+                        string? removeId = Console.ReadLine();
+                        if (!string.IsNullOrWhiteSpace(removeId))
+                        {
+                            userManager.RemoveUser(removeId);
+                            userManager.users.SaveToCsv(filePath);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid ID.");
+                        }
                         break;
 
                     case 3:
-                        studentManager.DisplayStudents();
+                        userManager.DisplayUsers();
                         break;
 
                     case 4:
+
+                        userManager.users.SaveToCsv(filePath);
                         Console.WriteLine("Exiting...");
                         return;
 
