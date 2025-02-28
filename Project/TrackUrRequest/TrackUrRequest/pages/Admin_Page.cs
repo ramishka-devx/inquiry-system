@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrackUrRequest.SortAlgs;
 
 namespace TrackUrRequest.pages
 {
@@ -105,14 +107,28 @@ namespace TrackUrRequest.pages
 
         public void SortByPriority()
         {
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Select Sorting Criteria");
             Console.WriteLine("1. Sort by Priority");
             Console.WriteLine("2. Sort by Complaint ID");
             Console.Write("Select an option: ");
             int choice = Convert.ToInt32(Console.ReadLine());
+            
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
             Bubble bubble = new Bubble();
             bubble.Sort(complaints, choice);
-            
+            //Selection sel1 = new Selection();
+            //sel1.Sort(complaints, choice);
+
+            stopwatch.Stop();
+            long elapsedTicks = stopwatch.ElapsedTicks;
+            double elapsedNanoseconds = elapsedTicks * 100.0;
+            Console.WriteLine("Runtime: " + elapsedNanoseconds + " ns");
+            Console.WriteLine("------------------------------------");
+
+
         }
 
         public void ChangeStat()
@@ -147,3 +163,6 @@ namespace TrackUrRequest.pages
 
     }
 }
+
+//Edit = 16.37 - 28-02-25 
+//Added Runtime measurer + Selection Sort

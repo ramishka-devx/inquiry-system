@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using TrackUrRequest.pages;
 
 namespace TrackUrRequest
 {
     internal class Tracker
     {
-        // Hard-coded Usernames and Password Arrays
-        string[] user_ids = { "AD001", "AD002", "AD003", "DE001", "DE002", "DE003", "EG225364", "EG225369", "EG225156" };
-        string[] passw = { "dean_01", "ar_01", "warden_01", "Than_01", "Rami_01", "Path_03", "4635", "5369", "6515" };
+
+        private Dictionary<string, string> credentials = new Dictionary<string, string>();
+
+
+        private string csvFilePath = "users.csv";
+
+        public Tracker()
+        {
+
+            LoadCredentialsFromCsv();
+        }
 
         public void Login_page()
         {
@@ -33,6 +39,10 @@ namespace TrackUrRequest
                 if (detec_page(inp_user_id) == 1) { admin_page(); }
                 else if (detec_page(inp_user_id) == 2) { dev_page(); }
                 else if (detec_page(inp_user_id) == 3) { users_page(inp_user_id); }
+                else
+                {
+                    Console.WriteLine("Invalid user role detected.");
+                }
             }
             else
             {
@@ -40,61 +50,82 @@ namespace TrackUrRequest
             }
         }
 
+
         public bool check_login(string username, string password)
         {
-            for (int i = 0; i < user_ids.Length; i++)
-            {
-                if (username == user_ids[i])
-                {
-                    if (password == passw[i])
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
+
+            return credentials.ContainsKey(username) && credentials[username] == password;
         }
+
+
         public int detec_page(string username)
         {
-            int page = 0;
-            string prefx01 = "AD";
-            string prefx02 = "DE";
-            string prefx03 = "EG";
-            if (username.Contains(prefx01))
-            {
-                page = 1;
-            }
-            else if (username.Contains(prefx02))
-            {
-                page = 2;
-            }
-            else if (username.Contains(prefx03))
-            {
-                page = 3;
-            }
-            return page;
+            if (username.StartsWith("AD")) return 1;
+            if (username.StartsWith("DE")) return 2;
+            if (username.StartsWith("EG")) return 3;
+            return 0;
         }
 
         public void admin_page()
         {
             Console.Clear();
-            //Console.WriteLine("Admin Page!!!!!");
             Admin_Page a = new Admin_Page("Admin");
             a.App();
         }
+
         public void dev_page()
         {
+            Console.Clear();
             Developer_Page dev = new Developer_Page();
             dev.Start_dev();
         }
+
         public void users_page(string Name)
         {
             Console.Clear();
-            //Console.WriteLine("Undergraduates Page!!!");
             UserPage u = new UserPage(Name);
             u.App();
+        }
 
 
+        private void LoadCredentialsFromCsv()
+        {
+            if (!File.Exists(csvFilePath))
+            {
+
+                Console.WriteLine($"[Warning] CSV file not found: {csvFilePath}");
+                return;
+            }
+
+            try
+            {
+                using (var reader = new StreamReader(csvFilePath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+
+                        var parts = line.Split(',');
+                        if (parts.Length == 2)
+                        {
+                            string userId = parts[0].Trim();
+                            string password = parts[1].Trim();
+
+
+                            if (!credentials.ContainsKey(userId))
+                            {
+                                credentials[userId] = password;
+                            }
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error loading credentials: " + ex.Message);
+            }
         }
     }
 }
+//Changed28/2/25
