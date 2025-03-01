@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "UoR_FoE_C&RM/1.0.0": {
+        "runtime": {
+          "UoR_FoE_C&RM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UoR_FoE_C&RM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
