@@ -117,10 +117,12 @@ namespace TrackUrRequest.pages
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            Bubble bubble = new Bubble();
-            bubble.Sort(complaints, choice);
+            //Bubble bubble = new Bubble();
+            //bubble.Sort(complaints, choice);
             //Selection sel1 = new Selection();
             //sel1.Sort(complaints, choice);
+            QuickSort quick = new QuickSort();
+            quick.Sort(complaints, choice);
 
             stopwatch.Stop();
             long elapsedTicks = stopwatch.ElapsedTicks;
