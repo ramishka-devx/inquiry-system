@@ -1,7 +1,4 @@
-# Build Folders
-bin/
-obj/
-out/
+
 
 # User-specific files
 *.rsuser
@@ -25,9 +22,6 @@ packages/
 **/packages/*
 
 # DLL and executable files
-*.dll
-*.exe
-*.app
 *.apk
 *.lib
 *.msi

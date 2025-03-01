@@ -1,3 +1,4 @@
+using System.IO;
 using TrackUrRequest;
 
 public class LinkedList
@@ -10,7 +11,6 @@ public class LinkedList
         get { return head; }
     }
 
-    // Add Complaint
     public void Add(Complaint data)
     {
         Node newNode = new Node(data);
@@ -26,7 +26,6 @@ public class LinkedList
         }
     }
 
-    // Display Complaints
     public void Display(string userName)
     {
         Node current = head;
@@ -42,6 +41,21 @@ public class LinkedList
         }
     }
 
+    public List<Complaint> GetAllComplaints()
+    {
+        List<Complaint> complaintList = new List<Complaint>();
+        Node current = head;
+
+        while (current != null)
+        {
+            complaintList.Add(current.Data);
+            current = current.Next;
+        }
+
+        return complaintList;
+    }
+
+
     public void DisplayAll()
     {
         Node current = head;
@@ -54,7 +68,6 @@ public class LinkedList
         }
     }
 
-    // Edit Complaint
     public bool Edit(int complaintID, string userName, string newDescription)
     {
         Node current = head;
@@ -104,7 +117,6 @@ public class LinkedList
         return false;
     }
 
-    // Save to CSV
     public void SaveToCSV(string filePath)
     {
         using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read))
@@ -120,8 +132,6 @@ public class LinkedList
         }
     }
 
-
-    // Load from CSV
     public void LoadFromCSV(string filePath)
     {
         if (File.Exists(filePath))
