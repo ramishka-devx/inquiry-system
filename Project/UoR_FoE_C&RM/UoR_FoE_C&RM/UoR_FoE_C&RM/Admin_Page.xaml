@@ -6,50 +6,81 @@
         xmlns:local="clr-namespace:UoR_FoE_C_RM"
         mc:Ignorable="d"
         Title="UoR-FoE Complaints and Requests Management System - Admin" Height="450" Width="1000"
-        WindowState="Maximized">
+        WindowState="Maximized" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
     <Grid>
         <!-- Full-screen overlay -->
         <Grid>
             <!-- Use an online image as background -->
             <Grid.Background>
-                <ImageBrush ImageSource="https://i.ibb.co/4Rd5Rc7N/image.jpg" Stretch="UniformToFill" />
+                <ImageBrush ImageSource="https://i.ibb.co/gLHqTkH5/blue-white-gradient-linear-1920x1080-c2-1e90ff-ffffff-a-90-f-14.png" Stretch="UniformToFill" />
             </Grid.Background>
 
             <!-- Full-screen overlay -->
             <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Black" Opacity="0.6"/>
         </Grid>
 
-        <!-- Complaints List (DataGrid for better organization) -->
-        <DataGrid x:Name="ComplaintsDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="50,100,50,0" AutoGenerateColumns="True" SelectionChanged="ComplaintsDataGrid_SelectionChanged"/>
+        <!-- Main Grid for Layout with two columns -->
+        <Grid Margin="50,100,50,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Complaints List (DataGrid for better organization) -->
+            <DataGrid x:Name="ComplaintsDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,0,20" AutoGenerateColumns="False" SelectionChanged="ComplaintsDataGrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Complaint ID" Binding="{Binding ComplaintID}" Width="*"/>
+                    <DataGridTextColumn Header="UserName" Binding="{Binding UserName}" Width="*"/>
+                    <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="*"/>
+                    <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                    <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="*"/>
+                    <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="*"/>
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Left Section: Change Priority or Status -->
+            <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,20,0">
+                <TextBlock Text="Change Priority or Status" FontSize="18" FontWeight="Bold" Foreground="White"/>
+
+                <!-- Change Priority -->
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                    <TextBlock Text="Priority: " Foreground="White" FontSize="15"/>
+                    <TextBox x:Name="PriorityTextBox" Width="200" Height="25" Margin="10,0"/>
+                </StackPanel>
+
+                <!-- Change Status -->
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                    <TextBlock Text="Status: " Foreground="White" FontSize="15"/>
+                    <TextBox x:Name="StatusTextBox" Width="200" Height="25" Margin="10,0"/>
+                </StackPanel>
+
+                <!-- Buttons for Actions (Stack buttons vertically) -->
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0">
+                    <Button Content="Change Priority" Width="150" Height="35" Margin="0,10" Click="ChangePriorityButton_Click"/>
+                    <Button Content="Change Status" Width="150" Height="35" Margin="0,10" Click="ChangeStatusButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Right Section: Sort Complaints -->
+            <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,20,0">
+                <TextBlock Text="Sort Complaints" FontSize="18" FontWeight="Bold" Foreground="White"/>
+
+                <!-- Sort by Complaint ID -->
+                <Button Content="Sort by Complaint ID" Width="150" Height="35" Margin="0,10" Click="SortComplaintsByID_Click"/>
+
+                <!-- Sort by Priority -->
+                <Button Content="Sort by Priority" Width="150" Height="35" Margin="0,10" Click="SortComplaintsByPriority_Click"/>
+            </StackPanel>
+        </Grid>
 
         <!-- Welcome Text -->
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,30,0,0">
             <TextBlock Text="Welcome Admin!" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
-        </StackPanel>
-
-        <!-- Options to Change Priority and Status -->
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,320,0,0">
-            <TextBlock Text="Change Priority or Status" FontSize="18" FontWeight="Bold" Foreground="White"/>
-
-            <!-- Change Priority -->
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
-                <TextBlock Text="Priority: " Foreground="White" FontSize="15"/>
-                <TextBox x:Name="PriorityTextBox" Width="200" Height="25" Margin="10,0"/>
-            </StackPanel>
-
-            <!-- Change Status -->
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
-                <TextBlock Text="Status: " Foreground="White" FontSize="15"/>
-                <TextBox x:Name="StatusTextBox" Width="200" Height="25" Margin="10,0"/>
-            </StackPanel>
-
-            <!-- Buttons for Actions -->
-            <Button Content="Change Priority" Width="150" Height="35" Margin="0,10" Click="ChangePriorityButton_Click"/>
-            <Button Content="Change Status" Width="150" Height="35" Margin="0,10" Click="ChangeStatusButton_Click"/>
-
-            <!-- Sort Complaints -->
-            <Button Content="Sort by Complaint ID" Width="150" Height="35" Margin="0,20" Click="SortComplaintsByID_Click"/>
-            <Button Content="Sort by Priority" Width="150" Height="35" Margin="0,20" Click="SortComplaintsByPriority_Click"/>
         </StackPanel>
     </Grid>
 </Window>

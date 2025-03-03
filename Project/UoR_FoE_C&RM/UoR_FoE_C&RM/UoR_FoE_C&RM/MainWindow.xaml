@@ -10,7 +10,7 @@
     <Grid>
         <!-- Set the background image -->
         <Grid.Background>
-            <ImageBrush ImageSource="https://i.ibb.co/4Rd5Rc7N/image.jpg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="https://i.ibb.co/gLHqTkH5/blue-white-gradient-linear-1920x1080-c2-1e90ff-ffffff-a-90-f-14.png" Stretch="UniformToFill" />
         </Grid.Background>
 
         <!-- Add translucent black overlay -->
@@ -20,15 +20,17 @@
                    Margin="0,90,0,0"/>
 
         <!-- Text block for title in the mid upper section -->
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,350,0,0">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,260,0,0">
             <TextBlock Text="Welcome!" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
-            <TextBlock Text="Complaints and Requests Management System" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="University of Ruhuna" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            <TextBlock Text="Faculty of Engineering" FontSize="23" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"  Margin="0,20,0,0"/>
+            <TextBlock Text="Complaints and Requests Management System" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,0"/>
         </StackPanel>
 
         <!-- Login section -->
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" Margin="0,267,0,0">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" Margin="0,250,0,0">
             <!-- Username input box -->
-            <StackPanel Orientation="Horizontal" Margin="0,250,0,10">
+            <StackPanel Orientation="Horizontal" Margin="0,260,0,10">
                 <TextBlock Text="Username :   " VerticalAlignment="Center" Foreground="White" FontSize="15"/>
                 <TextBox x:Name="UsernameTextBox" Width="200" Height="25"/>
             </StackPanel>

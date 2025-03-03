@@ -39,6 +39,12 @@ namespace UoR_FoE_C_RM
                     devPage.Show();
                     this.Close();
                 }
+                else if (tracker.detec_page(username) == 3)
+                {
+                    User_Page userPage = new User_Page(username);
+                    userPage.Show();
+                    this.Close();
+                }
                 else
                 {
                     MessageBox.Show("Access denied. Only Admins can log in.");
