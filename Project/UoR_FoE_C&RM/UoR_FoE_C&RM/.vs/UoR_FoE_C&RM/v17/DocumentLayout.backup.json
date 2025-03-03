@@ -3,44 +3,48 @@
   "WorkspaceRootPath": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\admin_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\admin_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\developer_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\developer_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\developer_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\developer_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\pages\\developer_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\pages\\developer_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\user_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\user_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\pages\\admin_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\pages\\admin_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\developer_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\developer_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\developer_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\developer_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\admin_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\admin_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\user_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\user_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\sortalgs\\insertionsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\sortalgs\\insertionsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\pages\\developer_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\pages\\developer_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|solutionrelative:uor_foe_c\u0026rm\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4173BCBD-F033-4ACA-8405-48488065D449}|UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM.csproj|d:\\studies\\3rd semester\\modules\\ec3202 - data structures \u0026 algorithms\\project\\withgui\\inquiry-system\\project\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\uor_foe_c\u0026rm\\user_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,72 +66,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Node.cs",
-              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Node.cs",
-              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Node.cs",
-              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Node.cs",
-              "RelativeToolTip": "UoR_FoE_C\u0026RM\\Node.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T09:43:57.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Admin_Page.xaml",
-              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml",
-              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Admin_Page.xaml",
-              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml",
-              "RelativeToolTip": "UoR_FoE_C\u0026RM\\Admin_Page.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-01T14:25:21.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin_Page.xaml.cs",
-              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
-              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
-              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
-              "RelativeToolTip": "UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAswAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T14:31:36.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Admin_Page.cs",
-              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
-              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
-              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
-              "RelativeToolTip": "UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T14:48:27.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
-              "RelativeToolTip": "UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAhwCgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T13:36:07.759Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -142,7 +82,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "Admin_Page.xaml",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Admin_Page.xaml",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\Admin_Page.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-01T14:25:21.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\MainWindow.xaml",
               "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\MainWindow.xaml",
@@ -155,32 +107,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Developer_Page.cs",
-              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
-              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
-              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
-              "RelativeToolTip": "UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T09:55:02.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Developer_Page.xaml.cs",
               "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Developer_Page.xaml.cs",
               "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Developer_Page.xaml.cs",
               "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Developer_Page.xaml.cs",
               "RelativeToolTip": "UoR_FoE_C\u0026RM\\Developer_Page.xaml.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAUwL0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAqwJEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T10:06:14.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
+              "Title": "Admin_Page.cs",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\pages\\Admin_Page.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAwwHkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T14:48:27.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Admin_Page.xaml.cs",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\Admin_Page.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T14:31:36.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "User_Page.xaml",
               "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\User_Page.xaml",
               "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\User_Page.xaml",
@@ -192,7 +157,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T13:36:07.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InsertionSort.cs",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\SortAlgs\\InsertionSort.cs",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\SortAlgs\\InsertionSort.cs",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\SortAlgs\\InsertionSort.cs",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\SortAlgs\\InsertionSort.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAQwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T10:09:52.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Node.cs",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Node.cs",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Node.cs",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Node.cs",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\Node.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:43:57.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Developer_Page.cs",
+              "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
+              "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
+              "ToolTip": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
+              "RelativeToolTip": "UoR_FoE_C\u0026RM\\pages\\Developer_Page.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:55:02.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "User_Page.xaml.cs",
               "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\User_Page.xaml.cs",
               "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\User_Page.xaml.cs",
@@ -204,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Tracker.cs",
               "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\Tracker.cs",
               "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\Tracker.cs",
@@ -216,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LinkedList.cs",
               "DocumentMoniker": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures \u0026 Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\UoR_FoE_C\u0026RM\\LinkedList.cs",
               "RelativeDocumentMoniker": "UoR_FoE_C\u0026RM\\LinkedList.cs",

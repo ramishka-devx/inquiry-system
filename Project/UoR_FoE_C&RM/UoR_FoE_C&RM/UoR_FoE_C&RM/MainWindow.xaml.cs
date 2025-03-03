@@ -7,30 +7,30 @@ namespace UoR_FoE_C_RM
 {
     public partial class MainWindow : Window
     {
-        // Create an instance of the Tracker class
         private Tracker tracker;
 
         public MainWindow()
         {
             InitializeComponent();
-            tracker = new Tracker(); // Initialize Tracker
+            tracker = new Tracker();
         }
 
+        private void LoginButton_Enter(object sender, RoutedEventArgs e)
+        {
+            LoginButton_Click(sender, e);
+        }
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = UsernameTextBox.Text; // Get the username from the input field
-            string password = PasswordBox.Password; // Get the password from the input field
+            string username = UsernameTextBox.Text;
+            string password = PasswordBox.Password;
 
-            // Check login credentials using Tracker
             if (tracker.check_login(username, password))
             {
-                // If the user is an admin, go to the Admin page
                 if (tracker.detec_page(username) == 1)
                 {
-                    // Open Admin Page (you can create a new window or page for the admin)
                     Admin_Page adminPage = new Admin_Page("Admin");
                     adminPage.Show();
-                    this.Close(); // Close the current window (login window)
+                    this.Close();
                 }
                 else if (tracker.detec_page(username) == 2)
                 {

@@ -70,20 +70,23 @@
                            Foreground="#222" HorizontalAlignment="Center" Margin="0,0,0,15"/>
 
                 <!-- Complaints List (DataGrid) -->
-                <DataGrid x:Name="ComplaintsDataGrid" Grid.Row="1" Height="200"
-                          AutoGenerateColumns="False"
-                          BorderThickness="1" BorderBrush="#CCC" Background="White"
-                          Margin="0,0,0,10">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Complaint ID" Binding="{Binding ComplaintID}" Width="Auto"/>
-                        <DataGridTextColumn Header="UserName" Binding="{Binding UserName}" Width="Auto"/>
-                        <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="Auto"/>
-                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="Auto"/>
-                        <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="Auto"/>
-                        <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="Auto"/>
-                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
-                    </DataGrid.Columns>
-                </DataGrid>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <DataGrid x:Name="ComplaintsDataGrid" Height="200"
+                              AutoGenerateColumns="False"
+                              BorderThickness="1" BorderBrush="#CCC" Background="White"
+                              Margin="0,0,0,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Complaint ID" Binding="{Binding ComplaintID}" Width="Auto"/>
+                            <DataGridTextColumn Header="UserName" Binding="{Binding UserName}" Width="Auto"/>
+                            <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="Auto"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="Auto"/>
+                            <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="Auto"/>
+                            <!-- Remove or modify this column if not needed -->
+                            <!-- <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="Auto"/> -->
+                            <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
 
                 <!-- Controls Section -->
                 <Grid Grid.Row="2">

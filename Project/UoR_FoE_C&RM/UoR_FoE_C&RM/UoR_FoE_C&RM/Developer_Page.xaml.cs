@@ -10,7 +10,6 @@ namespace UoR_FoE_C_RM
         private LinkedList<User> users;
         private string userRole;
 
-
         public Developer_PageWindow(string role = null)
         {
             InitializeComponent();
@@ -19,7 +18,6 @@ namespace UoR_FoE_C_RM
             users = new LinkedList<User>();
             LoadUsersFromCsv();
         }
-
 
         private void SetWindowTitle()
         {
@@ -36,19 +34,12 @@ namespace UoR_FoE_C_RM
                 ID = id ?? throw new ArgumentNullException(nameof(id));
                 Password = password ?? throw new ArgumentNullException(nameof(password));
             }
-
-            public override string ToString()
-            {
-                return $"{ID} - {Password}";
-            }
         }
-
 
         private void btnAddUser_Click(object sender, RoutedEventArgs e)
         {
             string id = txtUserID.Text;
             string password = txtPassword.Password;
-
 
             if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(password))
             {
@@ -62,57 +53,37 @@ namespace UoR_FoE_C_RM
 
             SaveUsersToCsv();
             ClearInputs();
-
-
-            lstUsers.Items.Add(user.ToString());
+            DisplayUsers();
         }
-
 
         private void btnRemoveUser_Click(object sender, RoutedEventArgs e)
         {
-
-            if (lstUsers.SelectedItem == null)
+            if (dgUsers.SelectedItem == null)
             {
                 MessageBox.Show("Please select a user to remove.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            string selectedUserText = lstUsers.SelectedItem.ToString();
-            var selectedUserId = selectedUserText.Split('-')[0].Trim();
-
-            var userNode = SearchUser(selectedUserId);
-            if (userNode != null)
+            var selectedUser = dgUsers.SelectedItem as User;
+            if (selectedUser != null)
             {
-                users.Remove(userNode);
-                MessageBox.Show($"User with ID {selectedUserId} removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-
+                users.Remove(FindUserNodeById(selectedUser.ID));
+                MessageBox.Show($"User with ID {selectedUser.ID} removed successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 SaveUsersToCsv();
-                ClearInputs();
-
-
-                lstUsers.Items.Clear();
-                foreach (var user in users)
-                {
-                    lstUsers.Items.Add(user.ToString());
-                }
-            }
-            else
-            {
-                MessageBox.Show("User not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                DisplayUsers();
             }
         }
-
-
 
         private void btnDisplayUsers_Click(object sender, RoutedEventArgs e)
         {
-            lstUsers.Items.Clear();
-            foreach (var user in users)
-            {
-                lstUsers.Items.Add(user.ToString());
-            }
+            DisplayUsers();
         }
 
+        private void DisplayUsers()
+        {
+            dgUsers.ItemsSource = null;
+            dgUsers.ItemsSource = users;
+        }
 
         private void SaveUsersToCsv()
         {
@@ -125,7 +96,6 @@ namespace UoR_FoE_C_RM
                 }
             }
         }
-
 
         private void LoadUsersFromCsv()
         {
@@ -146,10 +116,10 @@ namespace UoR_FoE_C_RM
                     }
                 }
             }
+            DisplayUsers();
         }
 
-
-        private LinkedListNode<User> SearchUser(string id)
+        private LinkedListNode<User> FindUserNodeById(string id)
         {
             var currentNode = users.First;
             while (currentNode != null)
@@ -163,27 +133,22 @@ namespace UoR_FoE_C_RM
             return null;
         }
 
-
         private void ClearInputs()
         {
             txtUserID.Clear();
             txtPassword.Clear();
         }
 
-
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
 
-
-        private void lstUsers_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        private void dgUsers_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            if (lstUsers.SelectedItem != null)
-            {
-                var selectedUser = lstUsers.SelectedItem.ToString();
-
-            }
+            // Handle selection changes if necessary
         }
     }
 }

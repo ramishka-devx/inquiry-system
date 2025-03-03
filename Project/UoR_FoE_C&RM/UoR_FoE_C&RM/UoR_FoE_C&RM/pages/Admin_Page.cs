@@ -121,8 +121,10 @@ namespace TrackUrRequest.pages
             //bubble.Sort(complaints, choice);
             //Selection sel1 = new Selection();
             //sel1.Sort(complaints, choice);
-            QuickSort quick = new QuickSort();
-            quick.Sort(complaints, choice);
+            //QuickSort quick = new QuickSort();
+            //quick.Sort(complaints, choice);
+            InsertionSort insert = new InsertionSort();
+            insert.Sort(complaints, choice);
 
             stopwatch.Stop();
             long elapsedTicks = stopwatch.ElapsedTicks;

@@ -58,7 +58,7 @@
             <StackPanel>
 
                 <!-- Title -->
-                <TextBlock Text="User Complaints" FontSize="22" FontWeight="Bold"
+                <TextBlock Text="User Dasboard" FontSize="22" FontWeight="Bold"
                            Foreground="#222" HorizontalAlignment="Center" Margin="0,0,0,15"/>
 
                 <!-- Complaints List -->
