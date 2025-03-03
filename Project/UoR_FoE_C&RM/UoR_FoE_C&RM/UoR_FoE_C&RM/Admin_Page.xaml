@@ -81,8 +81,8 @@
                             <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="Auto"/>
                             <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="Auto"/>
                             <DataGridTextColumn Header="Date" Binding="{Binding Date}" Width="Auto"/>
-                            <!-- Remove or modify this column if not needed -->
-                            <!-- <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="Auto"/> -->
+                            <!-- Added the Priority column back -->
+                            <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="Auto"/>
                             <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="Auto"/>
                         </DataGrid.Columns>
                     </DataGrid>
