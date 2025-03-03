@@ -76,7 +76,7 @@ namespace UoR_FoE_C_RM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UoR_FoE_C&RM;component/user_page.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/UoR_FoE_C&RM;V1.0.0.0;component/user_page.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\User_Page.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -76,7 +76,12 @@ namespace UoR_FoE_C_RM
 
         private void btnDisplayUsers_Click(object sender, RoutedEventArgs e)
         {
-            DisplayUsers();
+            var sortedUsers = new List<User>(users);
+            sortedUsers.Sort((user1, user2) => string.Compare(user1.ID, user2.ID));
+
+            // Bind the sorted users to the DataGrid
+            dgUsers.ItemsSource = sortedUsers;
+
         }
 
         private void DisplayUsers()
@@ -150,5 +155,6 @@ namespace UoR_FoE_C_RM
         {
             // Handle selection changes if necessary
         }
+        
     }
 }
