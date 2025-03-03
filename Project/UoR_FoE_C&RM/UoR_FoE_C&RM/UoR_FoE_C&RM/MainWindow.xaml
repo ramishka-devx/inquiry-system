@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UoR_FoE_C_RM"
         mc:Ignorable="d"
-        Title="UoR-FoE Complaints and Requests Management System" Height="450" Width="800">
+        Title="UoR-FoE Complaints and Requests Management System" Height="450" Width="800"
+        WindowState="Maximized">
     <Grid>
         <!-- Set the background image -->
         <Grid.Background>
@@ -13,10 +14,13 @@
         </Grid.Background>
 
         <!-- Add translucent black overlay -->
-        <Rectangle Width="800" Height="450" Fill="Black" Opacity="0.6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Rectangle Width="900" Height="600" Fill="Black" 
+                   Opacity="0.6" VerticalAlignment="Stretch" 
+                   HorizontalAlignment="Stretch"
+                   Margin="0,90,0,0"/>
 
         <!-- Text block for title in the mid upper section -->
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,168,0,0">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,350,0,0">
             <TextBlock Text="Welcome!" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
             <TextBlock Text="Complaints and Requests Management System" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
         </StackPanel>
@@ -24,7 +28,7 @@
         <!-- Login section -->
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" Margin="0,267,0,0">
             <!-- Username input box -->
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <StackPanel Orientation="Horizontal" Margin="0,250,0,10">
                 <TextBlock Text="Username :   " VerticalAlignment="Center" Foreground="White" FontSize="15"/>
                 <TextBox x:Name="UsernameTextBox" Width="200" Height="25"/>
             </StackPanel>
@@ -34,7 +38,11 @@
                 <TextBlock Text="Password  :   " VerticalAlignment="Center" Foreground="White" FontSize="15"/>
                 <PasswordBox Name="PasswordBox" Width="200" Height="25"/>
             </StackPanel>
-            <Button x:Name="LoginButton" Content="Login" Width="110" Height="35" FontSize="15" FontWeight="Bold" Click="LoginButton_Click"/>
+            <Button x:Name="LoginButton" 
+                    Content="Login" Width="275" 
+                    Height="50" FontSize="20" 
+                    FontWeight="Bold" Click="LoginButton_Click"
+                    Margin="0,20,0,0"/>
 
             <!-- Login button -->
         </StackPanel>

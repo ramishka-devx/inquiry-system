@@ -144,7 +144,7 @@ public class LinkedList
                 while ((line = sr.ReadLine()) != null)
                 {
                     lineNumber++;
-                    if (lineNumber == 1) continue; // Skip Header
+                    if (lineNumber == 1) continue; 
 
                     string[] data = line.Split(',');
                     if (data.Length == 7)

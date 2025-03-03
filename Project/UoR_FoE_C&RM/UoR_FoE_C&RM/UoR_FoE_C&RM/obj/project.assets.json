@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures & Algorithms\\Project\\inquiry-system\\Project\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM.csproj",
+      "projectUniqueName": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures & Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM.csproj",
       "projectName": "UoR_FoE_C&RM",
-      "projectPath": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures & Algorithms\\Project\\inquiry-system\\Project\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM.csproj",
+      "projectPath": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures & Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM.csproj",
       "packagesPath": "C:\\Users\\thant\\.nuget\\packages\\",
-      "outputPath": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures & Algorithms\\Project\\inquiry-system\\Project\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\obj\\",
+      "outputPath": "D:\\Studies\\3rd Semester\\Modules\\EC3202 - Data Structures & Algorithms\\Project\\withGUI\\inquiry-system\\Project\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\UoR_FoE_C&RM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

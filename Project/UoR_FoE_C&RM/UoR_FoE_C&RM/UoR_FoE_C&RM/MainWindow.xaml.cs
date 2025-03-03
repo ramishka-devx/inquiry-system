@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
-using TrackUrRequest;  // Import the Tracker class
+using TrackUrRequest;
+using TrackUrRequest.pages;
 
 namespace UoR_FoE_C_RM
 {
@@ -30,6 +31,13 @@ namespace UoR_FoE_C_RM
                     Admin_Page adminPage = new Admin_Page("Admin");
                     adminPage.Show();
                     this.Close(); // Close the current window (login window)
+                }
+                else if (tracker.detec_page(username) == 2)
+                {
+
+                    Developer_PageWindow devPage = new Developer_PageWindow("Developer");
+                    devPage.Show();
+                    this.Close();
                 }
                 else
                 {

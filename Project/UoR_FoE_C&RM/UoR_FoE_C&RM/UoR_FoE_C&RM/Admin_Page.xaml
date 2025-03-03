@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UoR_FoE_C_RM"
         mc:Ignorable="d"
-        Title="UoR-FoE Complaints and Requests Management System - Admin" Height="450" Width="1000">
+        Title="UoR-FoE Complaints and Requests Management System - Admin" Height="450" Width="1000"
+        WindowState="Maximized">
     <Grid>
         <!-- Full-screen overlay -->
         <Grid>
