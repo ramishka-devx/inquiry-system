@@ -5,7 +5,7 @@ using System.IO;
 namespace TrackUrRequest.pages
 {
     internal class Developer_Page
-    {   
+    {
 
         private LinkedList users;
 

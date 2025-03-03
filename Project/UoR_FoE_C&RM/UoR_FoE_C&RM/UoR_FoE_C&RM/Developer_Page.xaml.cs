@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 
-namespace TrackUrRequest.pages
+namespace UoR_FoE_C_RM
 {
     public partial class Developer_PageWindow : Window
     {

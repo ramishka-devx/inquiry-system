@@ -3,45 +3,101 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Title="User Page" Height="500" Width="800" mc:Ignorable="d">
+        Title="User Page" Height="500" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+
+    <Window.Resources>
+        <!-- Shadow Effect for Elements -->
+        <DropShadowEffect x:Key="ShadowEffect" BlurRadius="8" ShadowDepth="3" Opacity="0.3"/>
+
+        <!-- Style for Rounded Buttons -->
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8"
+                                Padding="10" Effect="{StaticResource ShadowEffect}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#1E90FF"/>
+            <Setter Property="Height" Value="35"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#0078D7"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#005BAA"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
     <Grid Margin="10">
+        <!-- Background Gradient -->
         <Grid.Background>
-            <ImageBrush ImageSource="https://i.ibb.co/gLHqTkH5/blue-white-gradient-linear-1920x1080-c2-1e90ff-ffffff-a-90-f-14.png" Stretch="UniformToFill" />
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#1E90FF" Offset="0"/>
+                <GradientStop Color="#87CEFA" Offset="0.5"/>
+                <GradientStop Color="#FFFFFF" Offset="1"/>
+            </LinearGradientBrush>
         </Grid.Background>
-        <StackPanel Orientation="Vertical">
 
-            <TextBlock Text="User Complaints" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- Main Container -->
+        <Border Width="500" Padding="20" CornerRadius="10" Background="#AAFFFFFF"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Effect="{StaticResource ShadowEffect}">
 
-            <!-- Complaints List -->
-            <ListView Name="ComplaintsListView" Height="200" Margin="0,0,0,10">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ComplaintID}" Width="50"/>
-                        <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Category}" Width="100"/>
-                        <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="300"/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+            <StackPanel>
 
-            <!-- Complaint Input -->
-            <TextBlock Text="Select Category:" Margin="0,10,0,0"/>
-            <ComboBox Name="CategoryComboBox" Width="200">
-                <ComboBoxItem Content="Hostel"/>
-                <ComboBoxItem Content="Academic"/>
-                <ComboBoxItem Content="Sport"/>
-                <ComboBoxItem Content="Other"/>
-            </ComboBox>
+                <!-- Title -->
+                <TextBlock Text="User Complaints" FontSize="22" FontWeight="Bold"
+                           Foreground="#222" HorizontalAlignment="Center" Margin="0,0,0,15"/>
 
-            <TextBlock Text="Enter Complaint:" Margin="0,10,0,0"/>
-            <TextBox Name="ComplaintTextBox" Height="50" Width="300"/>
+                <!-- Complaints List -->
+                <ListView Name="ComplaintsListView" Height="150" BorderThickness="1"
+                          BorderBrush="#CCC" Background="White">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ComplaintID}" Width="50"/>
+                            <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Category}" Width="100"/>
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="250"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
 
-            <!-- Buttons -->
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                <Button Content="Add Complaint" Width="120" Click="AddComplaint_Click"/>
-                <Button Content="Edit Complaint" Width="120" Margin="10,0,0,0" Click="EditComplaint_Click"/>
-                <Button Content="Logout" Width="120" Margin="10,0,0,0" Click="Logout_Click"/>
+                <!-- Complaint Input -->
+                <TextBlock Text="Select Category:" FontSize="14" Foreground="#444" Margin="5,10,0,0"/>
+                <Border Background="#F5F5F5" CornerRadius="8" Padding="5">
+                    <ComboBox Name="CategoryComboBox" Width="200">
+                        <ComboBoxItem Content="Hostel"/>
+                        <ComboBoxItem Content="Academic"/>
+                        <ComboBoxItem Content="Sport"/>
+                        <ComboBoxItem Content="Other"/>
+                    </ComboBox>
+                </Border>
+
+                <TextBlock Text="Enter Complaint:" FontSize="14" Foreground="#444" Margin="5,10,0,0"/>
+                <Border Background="#F5F5F5" CornerRadius="8" Padding="5">
+                    <TextBox Name="ComplaintTextBox" Height="50" Width="300" BorderThickness="0" FontSize="14"/>
+                </Border>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
+                    <Button Content="Add Complaint" Width="120" Click="AddComplaint_Click" Style="{StaticResource RoundedButtonStyle}"/>
+                    <Button Content="Edit Complaint" Width="120" Margin="10,0,0,0" Click="EditComplaint_Click" Style="{StaticResource RoundedButtonStyle}"/>
+                    <Button Content="Logout" Width="120" Margin="10,0,0,0" Click="Logout_Click" Style="{StaticResource RoundedButtonStyle}"/>
+                </StackPanel>
+
             </StackPanel>
+        </Border>
 
-        </StackPanel>
     </Grid>
 </Window>
