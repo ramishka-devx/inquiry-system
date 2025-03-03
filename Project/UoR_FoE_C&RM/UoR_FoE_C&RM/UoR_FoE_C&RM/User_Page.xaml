@@ -3,16 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Title="User Page" Height="500" Width="800"
+        Title="User Page" Height="600" Width="800"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d">
 
     <Window.Resources>
-        <!-- Shadow Effect for Elements -->
         <DropShadowEffect x:Key="ShadowEffect" BlurRadius="8" ShadowDepth="3" Opacity="0.3"/>
 
-        <!-- Style for Rounded Buttons -->
         <Style x:Key="RoundedButtonStyle" TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
@@ -41,7 +39,6 @@
     </Window.Resources>
 
     <Grid Margin="10">
-        <!-- Background Gradient -->
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                 <GradientStop Color="#1E90FF" Offset="0"/>
@@ -50,30 +47,28 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <!-- Main Container -->
-        <Border Width="500" Padding="20" CornerRadius="10" Background="#AAFFFFFF"
+        <Border Width="550" Padding="20" CornerRadius="10" Background="#AAFFFFFF"
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Effect="{StaticResource ShadowEffect}">
 
             <StackPanel>
 
-                <!-- Title -->
-                <TextBlock Text="User Dasboard" FontSize="22" FontWeight="Bold"
+                <TextBlock Text="User Dashboard" FontSize="22" FontWeight="Bold"
                            Foreground="#222" HorizontalAlignment="Center" Margin="0,0,0,15"/>
 
                 <!-- Complaints List -->
-                <ListView Name="ComplaintsListView" Height="150" BorderThickness="1"
+                <ListView Name="ComplaintsListView" Height="180" BorderThickness="1"
                           BorderBrush="#CCC" Background="White">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ComplaintID}" Width="50"/>
                             <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Category}" Width="100"/>
-                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="250"/>
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="200"/>
+                            <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="100"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
 
-                <!-- Complaint Input -->
                 <TextBlock Text="Select Category:" FontSize="14" Foreground="#444" Margin="5,10,0,0"/>
                 <Border Background="#F5F5F5" CornerRadius="8" Padding="5">
                     <ComboBox Name="CategoryComboBox" Width="200">
@@ -86,10 +81,9 @@
 
                 <TextBlock Text="Enter Complaint:" FontSize="14" Foreground="#444" Margin="5,10,0,0"/>
                 <Border Background="#F5F5F5" CornerRadius="8" Padding="5">
-                    <TextBox Name="ComplaintTextBox" Height="50" Width="300" BorderThickness="0" FontSize="14"/>
+                    <TextBox Name="ComplaintTextBox" Height="50" Width="350" BorderThickness="0" FontSize="14"/>
                 </Border>
 
-                <!-- Buttons -->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,0">
                     <Button Content="Add Complaint" Width="120" Click="AddComplaint_Click" Style="{StaticResource RoundedButtonStyle}"/>
                     <Button Content="Edit Complaint" Width="120" Margin="10,0,0,0" Click="EditComplaint_Click" Style="{StaticResource RoundedButtonStyle}"/>
